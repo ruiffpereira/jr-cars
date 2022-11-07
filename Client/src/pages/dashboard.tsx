@@ -1,7 +1,7 @@
 import { useContext } from 'react';
-import { AuthContext } from '../context/auth';
+import { AuthContext } from 'src/context/auth';
 
-const NewDashboard = () => {
+const Dashboard = () => {
 	const { logout } = useContext(AuthContext);
 
 	return (
@@ -12,4 +12,4 @@ const NewDashboard = () => {
 	);
 };
 
-export default NewDashboard;
+export default Dashboard;

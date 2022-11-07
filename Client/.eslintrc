@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": { 
+    "no-console": 1,
+    // Remember, this means error!
+    
+    // "no-relative-import-paths/no-relative-import-paths": [
+    //   "error",
+    //   { "rootDir": "src" }
+    // ],
+    "no-restricted-imports": ["error", {
+      "patterns": [".*", "..*"]
+    }],
+    "@typescript-eslint/no-empty-function": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-inferrable-types": 0,
+        "@typescript-eslint/no-unused-vars": "warn",
+        "@typescript-eslint/no-use-before-define": "error",
+        "sort-keys": [
+          "error",
+          "asc",
+          {
+              "caseSensitive": true,
+              "minKeys": 2,
+              "natural": false
+          }
+        ]  
+  }
+}
